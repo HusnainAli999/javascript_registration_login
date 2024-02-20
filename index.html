@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> JavaScript Startup Authentication Form </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="alert_main_div">
+        <p class="alert_f_p">Message By Husnain Federation <i class="fa-solid fa-circle-xmark"></i></p>
+        <p id="alert_s_p"></p>
+    </div>
+
+    <button type="button" id="move_btn"></button>
+
+    <div class="container" id="register_main_div">
+
+        <div class="content">
+            <div class="title">Registration Form Power by Local Storage</div>
+            <div class="form_replace_div">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span><br>
+                        <input type="text" id="username" placeholder="Enter Your name" required>
+                    </div>
+                </div>
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Email</span><br>
+                        <input type="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                </div>
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Phone Number</span><br>
+                        <input type="number" id="mobile" placeholder="Enter Your Number" required>
+                    </div>
+                </div>
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Password</span><br>
+                        <input type="password" id="password" placeholder="Enter Your Password" required>
+                    </div>
+                </div>
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Confirm Password <div class="checkbox-wrapper-10"
+                                style="position: absolute; margin-top:-30px; margin-left:150px;">
+                                <input checked="" type="checkbox" id="show_c_password" class="tgl tgl-flip">
+                                <label for="show_c_password" data-tg-on="Show" data-tg-off="Hide"
+                                    class="tgl-btn"></label>
+                            </div></span><br>
+                        <input type="password" id="confirm_password" placeholder="Repeat Password" required>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="button" value="Register" id="register">
+                </div>
+
+                <button type="button" class="delete_btn" id="removeBtn">
+                    <span>Remove Account From Husnain Federation It Sector!
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="login_main_div" style="display: none;">
+        <div class="title">Login With Husnain Federation</div>
+        <div class="content">
+            <div class="form_replace_div login_form_replace_div">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span><br>
+                        <input type="text" id="login_username" placeholder="Enter Your Complete Name" required>
+                    </div>
+                </div>
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Password</span><br>
+                        <input type="password" id="login_password" placeholder="Enter Your Password" required>
+
+                        <div class="checkbox-wrapper-10" style="position: absolute; margin:4px 0px 0px 100px;">
+                            <input checked="" type="checkbox" id="show_password" class="tgl tgl-flip show_password">
+                            <label for="show_password" data-tg-on="Show Password" data-tg-off="Hide Password"
+                                class="tgl-btn" style="width: 200px;"></label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" value="Login" id="login">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="functionality.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>
